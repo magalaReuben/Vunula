@@ -7,6 +7,7 @@ function App() {
   return (
     <div>
       <Box bgcolor={"background.default"} color={"text.primary"}> 
+      <DrawerAppBar/>
       Hello world
       </Box>
     </div>
