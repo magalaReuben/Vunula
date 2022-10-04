@@ -7,6 +7,7 @@ import ListItemText from '@mui/material/ListItemText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
 import Typography from '@mui/material/Typography';
+import { Box } from '@mui/system';
 
 
 const languages = ['English', 'Luganda'];
@@ -57,18 +58,29 @@ function InputDialog() {
 
   return (
     <div>
-      <Typography variant="subtitle1" component="div">
-        Selected: {selectedValue}
-      </Typography>
-      <br />
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Select Language
-      </Button>
-      <SimpleDialog
-        selectedValue={selectedValue}
-        open={open}
-        onClose={handleClose}
-      />
+        <Box sx={{
+          justifyContent: 'space-between',
+          p: 5,
+          m: 1,
+          bgcolor: 'background.paper',
+          height: 100,
+          borderRadius: 1,
+        }}>
+    
+            
+            <Button variant="outlined" onClick={handleClickOpen}>
+                Select Language
+            </Button>
+            <SimpleDialog
+                selectedValue={selectedValue}
+                open={open}
+                onClose={handleClose}
+        />
+        <br />
+        <Typography variant="subtitle1" component="div">
+            Selected: {selectedValue}
+        </Typography>
+        </Box>
     </div>
   );
 }
