@@ -1,5 +1,7 @@
 import React from 'react';
 import DrawerAppBar from './components/Nav';
+import InputDialog from './components/Input';
+import Stack from '@mui/material/Stack';
 import  Box  from '@mui/material/Box';
 
 
@@ -8,7 +10,9 @@ function App() {
     <div>
       <Box bgcolor={"background.default"} color={"text.primary"}> 
       <DrawerAppBar/>
-      Hello world
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <InputDialog/>
+      </Stack>
       </Box>
     </div>
   );
