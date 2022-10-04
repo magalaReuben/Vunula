@@ -10,10 +10,23 @@ function App() {
     <div>
       <Box bgcolor={"background.default"} color={"text.primary"}> 
       <DrawerAppBar/>
-      <Stack direction="row" spacing={2} justifyContent="space-between">
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-evenly',
+          p: 1,
+          m: 1,
+          bgcolor: 'background.paper',
+          height: 100,
+          borderRadius: 1,
+        }}
+      >
+        <Stack direction="row" spacing={2} justifyContent="space-between">
         <InputDialog/>
         <InputDialog/>
       </Stack>
+      </Box>
+      
       </Box>
     </div>
   );
