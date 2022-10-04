@@ -12,6 +12,7 @@ function App() {
       <DrawerAppBar/>
       <Stack direction="row" spacing={2} justifyContent="space-between">
         <InputDialog/>
+        <InputDialog/>
       </Stack>
       </Box>
     </div>
