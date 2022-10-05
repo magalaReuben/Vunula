@@ -36,8 +36,11 @@ function App() {
         </Stack> 
       </Box>
         <Footer 
-        osition= 'sticky'
-        bottom= "0"/>
+        sx={{marginTop: 'calc(10% + 60px)',
+        position: 'fixed',
+        bottom: 0,
+        width: '100%'
+        }}/>
       </Box>
     </div>
   );
