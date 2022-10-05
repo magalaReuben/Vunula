@@ -13,7 +13,6 @@ function App() {
       <Box
         bgcolor={"background.default"} 
         color={"text.primary"}
-        height={100000}
         sx={{
           display: 'grid',
           bgcolor: 'background.paper',
@@ -36,7 +35,9 @@ function App() {
           <InputDialog/>
         </Stack> 
       </Box>
-        <Footer/>
+        <Footer 
+        osition= 'sticky'
+        bottom= "0"/>
       </Box>
     </div>
   );
