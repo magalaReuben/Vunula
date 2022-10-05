@@ -18,7 +18,7 @@ const Footer = () => {
         width = '100%'
         >
                 <Box textAlign="center" pt={{xs: 3, sm:2}} pb={{xs:3, sm:2}}>
-                    <span role={"img"}>Vunula by BlaqCosmos😎🤟</span>
+                    <span role={"img"} aria-label="title">Vunula by BlaqCosmos😎🤟</span>
                     &reg; {new Date().getFullYear()}
                 </Box>
         </Box>

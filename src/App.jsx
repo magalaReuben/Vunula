@@ -34,7 +34,7 @@ function App() {
           <InputDialog/>
           <InputDialog/>
         </Stack> 
-        <Box sx={{marginTop: 'calc(30% + 60px)'}}>
+        <Box sx={{marginTop: 'calc(40% + 90px)'}}>
         </Box>
       </Box>
         <Footer/>
