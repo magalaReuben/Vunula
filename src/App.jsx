@@ -34,13 +34,10 @@ function App() {
           <InputDialog/>
           <InputDialog/>
         </Stack> 
+        <Box sx={{marginTop: 'calc(30% + 60px)'}}>
+        </Box>
       </Box>
-        <Footer 
-        sx={{marginTop: 'calc(10% + 60px)',
-        position: 'fixed',
-        bottom: 0,
-        width: '100%'
-        }}/>
+        <Footer/>
       </Box>
     </div>
   );
