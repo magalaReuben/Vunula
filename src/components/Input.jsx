@@ -7,7 +7,9 @@ import ListItemText from '@mui/material/ListItemText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
 import Typography from '@mui/material/Typography';
+import TextField  from '@mui/material/TextField';
 import { Box } from '@mui/system';
+import { OutlinedInput } from '@mui/material';
 
 
 const languages = ['English', 'Luganda'];
@@ -81,6 +83,9 @@ function InputDialog() {
             Selected: {selectedValue}
         </Typography>
         </Box>
+        <TextField label={selectedValue} multiline='default value'>
+            <OutlinedInput placeholder="{selectedValue}"/>
+        </TextField>
     </div>
   );
 }
